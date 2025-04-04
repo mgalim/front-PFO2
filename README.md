@@ -1,68 +1,106 @@
-# Portfolio Personal - Práctica Formativa Obligatoria 1
+# ✨ Portfolio Personal – Práctica Formativa Obligatoria 1
 
-Este proyecto es un portfolio personal que consta de tres secciones principales:
+¡Bienvenido/a a mi portfolio! 🎨  
+Este proyecto fue desarrollado como parte de una práctica formativa, y tiene como objetivo mostrar un poco de mí, mis gustos, habilidades y proyectos personales.
 
-1. **Sobre mí**: Una breve presentación personal.
-2. **Películas favoritas**: Una lista con mis películas favoritas.
-3. **Contacto**: Información para que puedan comunicarse conmigo.
+---
 
-# Checklist
+## 🧩 Secciones del Sitio
 
-## Estructura del Proyecto:
+1. 👤 **Sobre mí** – Presentación personal y un poco de quién soy.
+2. 🎬 **Películas favoritas** – Algunas de las pelis que más me gustan.
+3. 📬 **Contacto** – Para que puedas comunicarte conmigo fácilmente.
+4. 💻 **Proyectos** – Muestras de trabajos y creaciones personales.
+5. 🧠 **Habilidades** – Tecnologías que manejo y las que quiero seguir aprendiendo.
 
-- [ ] Archivo "index.html" ubicado en la raíz.
-- [ ] Carpeta "css" que contenga el archivo "styles.css".
-- [ ] (Opcional) Carpeta "img" para recursos gráficos.
-- [ ] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.
+---
 
-## Repositorio y Publicación:
+## ✅ Checklist de la Entrega
 
-- [ ] Repositorio en GitHub creado.
-- [ ] Proyecto subido al repositorio.
-- [ ] Proyecto publicado utilizando GitHub Pages.
-- [ ] En el "README.md" se indica la URL de GitHub Pages.
+### 📁 Estructura del Proyecto
 
-## Uso de Google Fonts:
+- [x] `index.html` ubicado en la raíz del proyecto.
+- [x] Carpeta `css` con el archivo `styles.css`.
+- [x] Carpeta `img` con recursos gráficos (opcional, pero la usé).
+- [x] Archivo `README.md` con descripción y checklist incluidos.
 
-- [ ] Enlace a Google Fonts incluido en la sección "head" del HTML.
-- [ ] La tipografía importada se aplica en el sitio.
-- [ ] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?  
-      **Respuesta:** ****************************\_\_****************************
+---
 
-## HTML:
+### 🌐 Repositorio & Publicación
 
-- [ ] El documento inicia con la declaración DOCTYPE y usa el atributo lang="es".
-- [ ] Se han incluido las metaetiquetas obligatorias: charset y viewport.
-- [ ] Se ha definido un título descriptivo.
-- [ ] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.
+- [x] Repositorio creado en GitHub.
+- [x] Proyecto subido correctamente.
+- [x] Publicado con GitHub Pages.
+- [x] URL de GitHub Pages indicada en este README.
 
-### Secciones obligatorias en "main":
+🔗 **URL del sitio publicado:** [👉 Ver mi Portfolio](https://tusitio.github.io) _(actualizá con el real)_
 
-- [ ] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.
-- [ ] Se han insertado al menos 4 comentarios explicativos en el código HTML.
+---
 
-## CSS:
+### 🔤 Google Fonts
 
-- [ ] Existe el archivo "styles.css" con estilos personalizados.
-- [ ] Se utilizan selectores basados en clases e identificadores.
-- [ ] La tipografía importada desde Google Fonts se aplica correctamente en todos los elementos.
+- [x] Enlace incluido en la sección `<head>` del HTML.
+- [x] Tipografía aplicada correctamente al sitio.
 
-### Layout y Organización:
+💬 **¿Por qué elegí esa fuente?**
 
-- [ ] Se ha organizado el layout (especialmente en la sección "tarjetas") utilizando Flexbox o Grid.
-- [ ] Redacta: ¿Qué ventajas encontraste al utilizar Flexbox o Grid en tu proyecto?  
-      **Respuesta:** **************************\_\_\_\_**************************
+> Suelo usarla y me resulta muy legible y moderna. 🧑‍💻
 
-### Estilización de Componentes:
+---
 
-- [ ] Se han personalizado los estilos de tablas, botones, enlaces y formularios.
-- [ ] Se han ajustado las dimensiones de imágenes y contenedores utilizando unidades relativas (%, rem, vh).
-- [ ] Se ha implementado al menos una animación o transición (por ejemplo, efecto hover en tarjetas o botones).
-- [ ] Redacta: ¿Qué animación o transición implementaste y por qué consideraste que era adecuada para tu proyecto?  
-      **Respuesta:** **************************\_\_\_\_**************************
+### 🧱 HTML
 
-## Consideraciones Adicionales:
+- [x] Uso correcto de `<!DOCTYPE>` y `lang="es"`.
+- [x] Inclusión de metaetiquetas `charset` y `viewport`.
+- [x] Título descriptivo definido.
+- [x] Vinculación correcta de CSS y Google Fonts.
 
-- [ ] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
-- [ ] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos alt en las imágenes).
-- [ ] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de implementación.
+#### ✒️ Estructura del `main`:
+
+- [x] Navegación (`<nav>`) con al menos 3 enlaces.
+- [x] Al menos 4 comentarios explicativos en el HTML.
+
+---
+
+### 🎨 CSS
+
+- [x] Archivo `styles.css` con estilos personalizados.
+- [x] Uso de selectores por clase e ID.
+- [x] Tipografía aplicada de forma global.
+
+---
+
+### 🧭 Layout & Organización
+
+- [x] Uso de **Flexbox** o **Grid** en secciones como "tarjetas".
+
+💬 **Ventajas encontradas:**
+
+> Me facilitó mucho ordenar los elementos de forma flexible, especialmente en resoluciones distintas. 📱🖥️
+
+---
+
+### 🎛️ Estilo de Componentes
+
+- [x] Estilos aplicados a botones, formularios, links, etc.
+- [x] Imágenes y contenedores ajustados con unidades relativas (`%`, `rem`, `vh`).
+- [x] Al menos una animación o transición aplicada.
+
+💬 **¿Qué usé y por qué?**
+
+> Apliqué una transición suave y un efecto de zoom para destacar elementos que en el futuro podrían tener enlaces interactivos. ⚡
+
+---
+
+### 🌍 Consideraciones Extra
+
+- [x] Diseño **responsive**, se adapta bien a diferentes dispositivos.
+- [x] Buenas prácticas de accesibilidad (atributos `alt` en imágenes, por ejemplo).
+- [x] Comentarios adicionales en el código explicando decisiones y lógica.
+
+---
+
+## 🙌 ¡Gracias por visitar mi portfolio!
+
+Si tenés sugerencias o simplemente querés decir "hola", no dudes en pasar por la sección de contacto 😉  
+¡Seguimos aprendiendo!

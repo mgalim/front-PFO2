@@ -3,20 +3,205 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>PFO-1</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio Personal</title>
   </head>
   <body>
+    <!-- Sección de Encabezado y navegación-->
     <header>
-      <h1>Texto Principal</h1>
+      <h1>Portfolio Personal</h1>
+      <nav>
+        <ul>
+          <li><a href="#perfil">Sobre Mí</a></li>
+          <li><a href="#tarjetas">Proyectos</a></li>
+          <li class="hide"><a href="#contacto">Contacto</a></li>
+          <li><a href="#peliculas">Peliculas</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav></nav>
-    <div class="container">
+    <div class="wrapper">
       <main>
-        <section></section>
+        <!-- Presentación Personal -->
+        <h2>Sobre Mí</h2>
+        <section id="perfil">
+          <article class="card">
+            <img
+              src="img/avatar.webp"
+              alt="Foto de perfil"
+              class="perfil"
+              width="400"
+            />
+            <p>
+              ¡Hola! Me llamo Marcelo y soy un desarrollador apasionado por la
+              tecnología y la programación. Me encanta aprender nuevas
+              tecnologías y compartir mis conocimientos. Algunos de mis
+              pasatiempos son: ver peliculas y series, jugar a videojuegos y
+              salir con mis amigos a navegar por el rió.
+            </p>
+          </article>
+        </section>
+
+        <!-- Tarjetas o Columnas -->
+        <h2>Proyectos Destacados</h2>
+        <section id="tarjetas">
+          <article class="card">
+            <img src="img/decode.webp" alt="Proyecto 1" width="350px" />
+            <div>
+              <h3>Decode</h3>
+              <p>
+                Una web con enlaces de algunos de mis gustos personales y de
+                interés. Realizada puramente en html - css - js responsive.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="img/rainmeter.webp" alt="Proyecto 2" width="350px" />
+            <div>
+              <h3>Unify</h3>
+              <p>
+                Una Skin para Rainmeter. Consta de un lanzador de aplicaciones
+                de escritorio central.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Listado de Habilidades -->
+        <h2>Habilidades</h2>
+        <section id="habilidades">
+          <article>
+            <ul>
+              <li>HTML, CSS y JavaScript</li>
+              <li>Angular - TypeScript</li>
+              <li>Java - SpringBoot</li>
+              <li>Aprendiendo Node</li>
+              <li>Con ganas de aprender React</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <h2>Contacto</h2>
+        <section id="contacto">
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+
+            <button type="submit">ENVIAR</button>
+          </form>
+        </section>
+
+        <!-- Películas Favoritas -->
+        <h2>Mis Películas Favoritas</h2>
+        <section id="peliculas">
+          <div class="peliculas-container">
+            <div class="pelicula">
+              <img src="img/pulp.webp" alt="Película 1" width="200px" />
+              <h3>Pulp Fiction</h3>
+              <p>
+                Una obra maestra del cine dirigida por Quentin Tarantino, con
+                una narrativa no lineal única. Llena de diálogos memorables y
+                personajes icónicos.
+              </p>
+            </div>
+            <div class="pelicula">
+              <img src="img/inter.webp" alt="Película 2" width="200px" />
+              <h3>Interstellar</h3>
+              <p>
+                Una película de ciencia ficción con una gran profundidad
+                emocional.
+              </p>
+              <p>
+                Explora los viajes espaciales y el tiempo con una narrativa
+                impactante.
+              </p>
+            </div>
+            <div class="pelicula">
+              <img src="img/club.webp" alt="Película 3" width="200px" />
+              <h3>El Club de la Pelea</h3>
+              <p>Un thriller psicológico con una trama fascinante.</p>
+              <p>
+                Basada en la novela de Chuck Palahniuk, es una historia llena de
+                giros inesperados.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
-      <aside></aside>
     </div>
-    <footer></footer>
+    <!-- Pie de Página -->
+    <!-- Pie de Página -->
+    <footer>
+      <p>Sígueme en mis redes sociales:</p>
+      <ul>
+        <li>
+          <a href="https://twitter.com/" target="_blank">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                fill="currentColor"
+              />
+            </svg>
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/" target="_blank">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.12-1.47-1.12-1.47-.92-.63.07-.62.07-.62 1.02.07 1.56 1.05 1.56 1.05.91 1.55 2.38 1.1 2.96.84.09-.66.36-1.1.65-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.55 9.55 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.39.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.69-4.57 4.93.37.32.7.94.7 1.91v2.83c0 .27.18.59.69.48A10.003 10.003 0 0022 12c0-5.52-4.48-10-10-10z"
+                fill="currentColor"
+              />
+            </svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/" target="_blank">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 8.75h4v12.5H3v-12.5zM9 8.75h3v2.25h.03a3.3 3.3 0 013-1.64c3.22 0 3.82 2.12 3.82 4.87v6.27h-4v-5.56c0-1.32-.03-3-1.83-3s-2.12 1.43-2.12 2.91v5.65h-4v-12.5z"
+                fill="currentColor"
+              />
+            </svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
