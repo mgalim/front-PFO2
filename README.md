@@ -33,7 +33,7 @@ Este proyecto fue desarrollado como parte de una práctica formativa, y tiene co
 - [x] Publicado con GitHub Pages.
 - [x] URL de GitHub Pages indicada en este README.
 
-🔗 **URL del sitio publicado:** [👉 Ver mi Portfolio](https://mgalim.github.io/front-PFO1) _(actualizá con el real)_
+🔗 **URL del sitio publicado:** [👉 Ver mi Portfolio](https://mgalim.github.io/front-PFO1)
 
 ---
 
