@@ -24,7 +24,7 @@ body {
   color: var(--clr-text);
   font-weight: var(--fw-regular);
   background-color: var(--clr-dark-500);
-  margin-top: 115px;
+  margin-top: 125px;
   text-align: center;
 }
 
@@ -70,8 +70,10 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   gap: 1rem;
+  overflow-x: auto;
+  text-wrap: nowrap;
 }
 
 nav a {
@@ -87,44 +89,34 @@ footer a:hover {
 }
 
 .wrapper {
-  padding: 0 1rem;
-}
-
-.hide {
-  display: none;
-}
-
-main {
-  margin: 0 auto;
+  --max-width: 930px;
+  width: min(var(--max-width), 100% - 3rem);
+  margin-inline: auto;
 }
 
 section {
+  border-radius: 5px;
+  margin-top: 1.2rem;
   margin-bottom: 2rem;
-  padding: 1rem 0.5rem;
+  margin-inline: auto;
 }
 
 section[id] {
-  scroll-margin-top: 155px;
-}
-
-section[id="contacto"] {
-  scroll-margin-top: 175px;
+  scroll-margin-top: 185px;
 }
 
 article {
-  padding: 1rem 0;
+  padding: 1.6rem;
+  border-radius: 8px;
+  background-color: var(--clr-dark-800);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  background-color: var(--clr-dark-800);
-  padding: 1.5rem;
-  border-radius: 5px;
   gap: 1rem;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
@@ -137,30 +129,20 @@ article {
   word-wrap: break-word;
 }
 
-#perfil {
-  max-width: 900px;
-}
-
 #tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
   gap: 1.5rem;
   max-width: 800px;
-  margin: 0 auto 2rem;
 }
 
-#habilidades {
+.skills {
   background-color: var(--clr-dark-800);
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   max-width: 600px;
-  margin: 1rem auto 3rem;
+  margin-inline: auto;
 }
 
-#habilidades li {
-  font-size: 1.1rem;
+#habilidades .skills li {
+  font-size: 1rem;
   padding: 0.75rem;
   background-color: var(--clr-dark-500);
   border-radius: 5px;
@@ -202,12 +184,7 @@ article {
 }
 
 #contacto {
-  background-color: var(--clr-dark-800);
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   max-width: 700px;
-  margin: 1rem auto 2.53rem;
   text-align: start;
 }
 
@@ -254,32 +231,27 @@ article {
 }
 
 #peliculas {
-  max-width: 1000px;
-  margin: 0 auto 3.5rem;
-}
-
-.peliculas-container {
+  border-radius: 8px;
   background-color: var(--clr-dark-800);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
   justify-content: center;
+  max-width: 910px;
+  padding: 1.5rem 0;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .pelicula {
   background-color: var(--clr-dark-500);
-  padding: 1.2rem 1rem;
-  border-radius: 8px;
   text-align: center;
-  transition: transform 0.3s ease, background 0.3s ease;
   flex: 1 1 280px;
   max-width: 270px;
   cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .pelicula:hover {
@@ -309,7 +281,7 @@ article {
 footer {
   background-color: var(--clr-dark-800);
   text-align: center;
-  padding: 2rem;
+  padding-block: 2rem;
   margin-top: 1rem;
 }
 
@@ -328,11 +300,11 @@ footer ul {
 
 footer li {
   display: inline-block;
+  overflow-x: hidden;
 }
 
 footer a {
   color: var(--clr-text);
-  font-size: 1.1rem;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -356,12 +328,7 @@ footer a:hover svg {
   fill: var(--clr-accent);
 }
 
-/* Media Queries */
 @media (min-width: 600px) {
-  .hide {
-    display: block;
-  }
-
   nav ul {
     justify-content: center;
     gap: 1.7rem;
@@ -373,7 +340,7 @@ footer a:hover svg {
     font-size: 16px;
   }
 
-  .peliculas-container {
+  #peliculas {
     flex-direction: row;
   }
 
@@ -383,11 +350,5 @@ footer a:hover svg {
 
   img.perfil {
     max-width: 260px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .wrapper {
-    display: flex;
   }
 }

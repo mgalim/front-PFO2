@@ -40,75 +40,76 @@
         <ul>
           <li><a href="#perfil">Sobre Mí</a></li>
           <li><a href="#tarjetas">Proyectos</a></li>
-          <li class="hide"><a href="#contacto">Contacto</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li><a href="#peliculas">Peliculas</a></li>
         </ul>
       </nav>
     </header>
-    <div class="wrapper">
-      <main>
-        <!-- Presentación Personal -->
-        <h2>Sobre Mí</h2>
-        <section id="perfil">
-          <article class="card">
-            <img
-              src="img/avatar.webp"
-              alt="Foto de perfil"
-              class="perfil"
-              width="400"
-            />
+    <main class="wrapper">
+      <!-- Presentación Personal -->
+      <h2>Sobre Mí</h2>
+      <section id="perfil">
+        <article class="card">
+          <img
+            src="img/avatar.webp"
+            alt="Foto de perfil"
+            class="perfil"
+            width="400"
+          />
+          <p>
+            ¡Hola! Me llamo Marcelo y soy un desarrollador apasionado por la
+            tecnología y la programación. Me encanta aprender nuevas tecnologías
+            y compartir mis conocimientos. Algunos de mis pasatiempos son: ver
+            peliculas y series, jugar a videojuegos y salir con mis amigos a
+            navegar por el rió.
+          </p>
+        </article>
+      </section>
+
+      <!-- Tarjetas o Columnas -->
+      <h2>Proyectos Destacados</h2>
+      <section id="tarjetas">
+        <article class="card">
+          <img src="img/decode.webp" alt="Proyecto 1" width="350px" />
+          <div>
+            <h3>Decode</h3>
             <p>
-              ¡Hola! Me llamo Marcelo y soy un desarrollador apasionado por la
-              tecnología y la programación. Me encanta aprender nuevas
-              tecnologías y compartir mis conocimientos. Algunos de mis
-              pasatiempos son: ver peliculas y series, jugar a videojuegos y
-              salir con mis amigos a navegar por el rió.
+              Una web con enlaces de algunos de mis gustos personales y de
+              interés. Realizada puramente en html - css - js responsive.
             </p>
-          </article>
-        </section>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/rainmeter.webp" alt="Proyecto 2" width="350px" />
+          <div>
+            <h3>Unify</h3>
+            <p>
+              Una Skin para Rainmeter. Consta de un lanzador de aplicaciones de
+              escritorio central.
+            </p>
+          </div>
+        </article>
+      </section>
 
-        <!-- Tarjetas o Columnas -->
-        <h2>Proyectos Destacados</h2>
-        <section id="tarjetas">
-          <article class="card">
-            <img src="img/decode.webp" alt="Proyecto 1" width="350px" />
-            <div>
-              <h3>Decode</h3>
-              <p>
-                Una web con enlaces de algunos de mis gustos personales y de
-                interés. Realizada puramente en html - css - js responsive.
-              </p>
-            </div>
-          </article>
-          <article class="card">
-            <img src="img/rainmeter.webp" alt="Proyecto 2" width="350px" />
-            <div>
-              <h3>Unify</h3>
-              <p>
-                Una Skin para Rainmeter. Consta de un lanzador de aplicaciones
-                de escritorio central.
-              </p>
-            </div>
-          </article>
-        </section>
+      <!-- Listado de Habilidades -->
+      <h2>Habilidades</h2>
+      <section id="habilidades">
+        <article class="skills">
+          <ul>
+            <li>HTML - CSS - JS</li>
+            <li>Angular - TypeScript</li>
+            <li>Java - SpringBoot</li>
+            <li>Aprendiendo Node</li>
+            <li>Quiero saber React</li>
+          </ul>
+        </article>
+      </section>
 
-        <!-- Listado de Habilidades -->
-        <h2>Habilidades</h2>
-        <section id="habilidades">
-          <article>
-            <ul>
-              <li>HTML, CSS y JavaScript</li>
-              <li>Angular - TypeScript</li>
-              <li>Java - SpringBoot</li>
-              <li>Aprendiendo Node</li>
-              <li>Con ganas de aprender React</li>
-            </ul>
-          </article>
-        </section>
-
-        <!-- Formulario de Contacto -->
-        <h2>Contacto</h2>
-        <section id="contacto">
+      <!-- Formulario de Contacto -->
+      <h2>Contacto</h2>
+      <section id="contacto">
+        <article>
           <form>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required />
@@ -124,47 +125,43 @@
 
             <button type="submit">ENVIAR</button>
           </form>
-        </section>
+        </article>
+      </section>
 
-        <!-- Películas Favoritas -->
-        <h2>Mis Películas Favoritas</h2>
-        <section id="peliculas">
-          <div class="peliculas-container">
-            <div class="pelicula">
-              <img src="img/pulp.webp" alt="Película 1" width="200px" />
-              <h3>Pulp Fiction</h3>
-              <p>
-                Una obra maestra del cine dirigida por Quentin Tarantino, con
-                una narrativa no lineal única. Llena de diálogos memorables y
-                personajes icónicos.
-              </p>
-            </div>
-            <div class="pelicula">
-              <img src="img/inter.webp" alt="Película 2" width="200px" />
-              <h3>Interstellar</h3>
-              <p>
-                Una película de ciencia ficción con una gran profundidad
-                emocional.
-              </p>
-              <p>
-                Explora los viajes espaciales y el tiempo con una narrativa
-                impactante.
-              </p>
-            </div>
-            <div class="pelicula">
-              <img src="img/club.webp" alt="Película 3" width="200px" />
-              <h3>El Club de la Pelea</h3>
-              <p>Un thriller psicológico con una trama fascinante.</p>
-              <p>
-                Basada en la novela de Chuck Palahniuk, es una historia llena de
-                giros inesperados.
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-    <!-- Pie de Página -->
+      <!-- Películas Favoritas -->
+      <h2>Mis Películas Favoritas</h2>
+      <section id="peliculas">
+        <article class="pelicula">
+          <img src="img/pulp.webp" alt="Película 1" width="200px" />
+          <h3>Pulp Fiction</h3>
+          <p>
+            Una obra maestra del cine dirigida por Quentin Tarantino, con una
+            narrativa no lineal única. Llena de diálogos y personajes únicos.
+          </p>
+        </article>
+        <article class="pelicula">
+          <img src="img/inter.webp" alt="Película 2" width="200px" />
+          <h3>Interstellar</h3>
+          <p>
+            Una película de ciencia ficción con una gran profundidad emocional.
+          </p>
+          <p>
+            Explora los viajes espaciales y el tiempo con una narrativa
+            impactante.
+          </p>
+        </article>
+        <article class="pelicula">
+          <img src="img/club.webp" alt="Película 3" width="200px" />
+          <h3>El Club de la Pelea</h3>
+          <p>Un thriller psicológico con una trama fascinante.</p>
+          <p>
+            Basada en la novela de Chuck Palahniuk, es una historia llena de
+            giros inesperados.
+          </p>
+        </article>
+      </section>
+    </main>
+
     <!-- Pie de Página -->
     <footer>
       <p>Sígueme en mis redes sociales:</p>
