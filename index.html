@@ -32,10 +32,21 @@
     />
     <title>Portfolio Personal</title>
   </head>
-  <body>
+  <body class="dark-theme">
     <!-- Sección de Encabezado y navegación-->
     <header>
-      <h1>Portfolio Personal</h1>
+      <div class="title-bar">
+        <h1>Portfolio Personal</h1>
+        <button id="btn-theme">
+          <img
+            src="./img/theme.svg"
+            alt="cambiar tema"
+            width="35"
+            height="35"
+            class="icon-theme"
+          />
+        </button>
+      </div>
       <nav>
         <ul>
           <li><a href="#perfil">Sobre Mí</a></li>
@@ -219,5 +230,6 @@
         </li>
       </ul>
     </footer>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
