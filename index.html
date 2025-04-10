@@ -66,7 +66,7 @@
             src="img/avatar.webp"
             alt="Foto de perfil"
             class="perfil"
-            width="400"
+            width="260"
           />
           <p>
             ¡Hola! Me llamo Marcelo y soy un desarrollador apasionado por la
@@ -122,26 +122,30 @@
       <section id="contacto">
         <article>
           <form id="formulario" novalidate>
-            <label for="nombre"><span>*</span> Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
-
-            <label for="apellido"><span>*</span> Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required />
-
-            <label for="email"><span>*</span> Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="telefono"
-              ><span>*</span> Teléfono: (solo números)</label
-            >
-            <input
-              type="text"
-              id="telefono"
-              inputmode="numeric"
-              name="telefono"
-              required
-            />
-
+            <div class="input-group">
+              <label for="nombre"><span>*</span> Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="input-group">
+              <label for="apellido"><span>*</span> Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+            <div class="input-group">
+              <label for="email"><span>*</span> Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="input-group">
+              <label for="telefono"
+                ><span>*</span> Teléfono: (solo números)</label
+              >
+              <input
+                type="text"
+                id="telefono"
+                name="telefono"
+                inputmode="numeric"
+                required
+              />
+            </div>
             <button>ENVIAR</button>
           </form>
         </article>

@@ -45,7 +45,7 @@ formulario.addEventListener("submit", function (event) {
 
   const completos = Array.from(inputs).every((input) => !!input.value.trim());
 
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   const telefonoRegex = /^\d{8,15}$/;
 
   if (!completos) {
@@ -54,12 +54,12 @@ formulario.addEventListener("submit", function (event) {
   }
 
   if (!emailRegex.test(inputs.item(2).value)) {
-    showPopup("Por favor, revise el correo.", "warning");
+    showPopup("El correo no es valido.", "warning");
     return;
   }
 
   if (!telefonoRegex.test(inputs.item(3).value)) {
-    showPopup("Por favor, revise el telefono.", "warning");
+    showPopup("El telefono no es valido.", "warning");
     return;
   }
 
