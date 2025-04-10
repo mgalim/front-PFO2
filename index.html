@@ -121,22 +121,36 @@
       <h2>Contacto</h2>
       <section id="contacto">
         <article>
-          <form>
-            <label for="nombre">Nombre:</label>
+          <form id="formulario" novalidate>
+            <label for="nombre"><span>*</span> Nombre:</label>
             <input type="text" id="nombre" name="nombre" required />
 
-            <label for="apellido">Apellido:</label>
+            <label for="apellido"><span>*</span> Apellido:</label>
             <input type="text" id="apellido" name="apellido" required />
 
-            <label for="email">Email:</label>
+            <label for="email"><span>*</span> Email:</label>
             <input type="email" id="email" name="email" required />
 
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" />
+            <label for="telefono"
+              ><span>*</span> Teléfono: (solo números)</label
+            >
+            <input
+              type="text"
+              id="telefono"
+              inputmode="numeric"
+              name="telefono"
+              required
+            />
 
-            <button type="submit">ENVIAR</button>
+            <button>ENVIAR</button>
           </form>
         </article>
+        <div id="error-popup">
+          <div class="popup-container">
+            <img src="./img/info.svg" alt="popup" width="35" />
+            <p id="mensaje"></p>
+          </div>
+        </div>
       </section>
 
       <!-- Películas Favoritas -->
@@ -230,6 +244,6 @@
         </li>
       </ul>
     </footer>
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>

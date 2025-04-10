@@ -1,15 +1,15 @@
 :root {
   --clr-bar: hsl(208, 19%, 50%);
 
-  /* light colors */
+  /* dark colors */
   --clr-dark-text: hsl(0, 0%, 93%);
   --clr-dark-500: hsl(218, 15%, 20%);
   --clr-dark-800: hsl(209, 44%, 12%);
   --clr-dark-accent: hsl(51, 73%, 32%);
 
-  /* dark colors */
+  /* light colors */
   --clr-light-text: hsl(0, 0%, 15%);
-  --clr-light-500: hsl(218, 15%, 85%);
+  --clr-light-500: hsl(218, 15%, 75%);
   --clr-light-800: hsl(209, 53%, 71%);
   --clr-light-accent: hsl(51, 80%, 40%);
 
@@ -52,6 +52,7 @@ body {
   font-weight: var(--fw-regular);
   margin-top: 125px;
   text-align: center;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 h1 {
@@ -244,6 +245,10 @@ article {
   font-weight: var(--fw-bold);
 }
 
+#contacto label span {
+  color: crimson;
+}
+
 #contacto input {
   background-color: var(--clr-background);
   border: 2px solid var(--clr-bar);
@@ -257,6 +262,10 @@ article {
 #contacto input:focus {
   outline: none;
   border-color: var(--clr-accent);
+}
+
+#contacto img {
+  background: transparent;
 }
 
 #contacto button {
@@ -275,6 +284,41 @@ article {
 
 #contacto button:hover {
   background-color: var(--clr-accent);
+}
+
+.popup-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#error-popup {
+  visibility: hidden;
+  color: var(--clr-foreground);
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--clr-strong);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  opacity: 0;
+  transition: opacity 0.2s ease, visibility 0s 0.2s;
+}
+
+#error-popup.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease, visibility 0s 0s;
+}
+
+#error-popup.error {
+  border: 3px solid red;
+}
+
+#error-popup.warning {
+  border: 3px solid gold;
 }
 
 #peliculas {
