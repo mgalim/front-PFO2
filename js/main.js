@@ -16,20 +16,17 @@ const iconos = {
 
 const formulario = document.getElementById("formulario");
 const inputs = formulario.querySelectorAll("input");
-const errorPopup = document.getElementById("error-popup");
-const icono = errorPopup.querySelector("img");
+const popup = document.getElementById("popup");
+const icono = popup.querySelector("img");
 const mensaje = document.getElementById("mensaje");
 
 function showPopup(msg, type) {
   mensaje.innerText = msg;
-  errorPopup.classList.remove(type);
-
-  icono.setAttribute("src", iconos[type] || iconos.info);
-
-  errorPopup.classList.add("show", type);
+  icono.setAttribute("src", iconos[type]);
+  popup.classList.add("show", type);
 
   setTimeout(() => {
-    errorPopup.classList.remove("show", type);
+    popup.classList.remove("show", type);
   }, 2000);
 }
 

@@ -77,6 +77,18 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--clr-foreground);
+}
+
+button,
+a {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 header {
   background-color: var(--clr-strong);
   color: var(--clr-foreground);
@@ -115,7 +127,6 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
   color: var(--clr-foreground);
   display: block;
   padding: 0.4rem;
@@ -193,13 +204,27 @@ img.perfil {
   max-width: 800px;
 }
 
+.btn-mas {
+  display: inline-block;
+  padding: 0.75rem;
+  background-color: var(--clr-bar);
+  color: var(--clr-text);
+  font-weight: var(--fw-bold);
+  margin-top: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.btn-mas:hover {
+  background-color: var(--clr-accent);
+}
+
 .skills {
   background-color: var(--clr-strong);
   max-width: 600px;
   margin-inline: auto;
 }
 
-#habilidades .skills li {
+#habilidades .skills a {
   font-size: 1rem;
   padding: 0.75rem;
   background-color: var(--clr-background);
@@ -212,32 +237,32 @@ img.perfil {
   cursor: pointer;
 }
 
-#habilidades li:last-child {
+#habilidades li:last-child a {
   margin-bottom: 0;
 }
 
-#habilidades li:hover {
+#habilidades a:hover {
   background-color: var(--clr-accent);
 }
 
-#habilidades li::before {
+#habilidades li a::before {
   content: "💻";
   font-size: 1.3rem;
 }
 
-#habilidades li:nth-child(1)::before {
+#habilidades li:nth-child(1) a::before {
   content: "🌐";
 }
-#habilidades li:nth-child(2)::before {
+#habilidades li:nth-child(2) a::before {
   content: "🅰️";
 }
-#habilidades li:nth-child(3)::before {
+#habilidades li:nth-child(3) a::before {
   content: "☕";
 }
-#habilidades li:nth-child(4)::before {
+#habilidades li:nth-child(4) a::before {
   content: "🚀";
 }
-#habilidades li:nth-child(5)::before {
+#habilidades li:nth-child(5) a::before {
   content: "⚛️";
 }
 
@@ -263,10 +288,7 @@ img.perfil {
   background-color: var(--clr-bar);
   color: var(--clr-text);
   font-weight: var(--fw-bold);
-  border: none;
-  border-radius: 5px;
   margin-top: 1.2rem;
-  cursor: pointer;
   transition: background 0.3s ease;
 }
 
@@ -296,7 +318,7 @@ img.perfil {
   }
 }
 
-#error-popup {
+#popup {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -327,21 +349,21 @@ img.perfil {
   }
 }
 
-#error-popup.show {
+#popup.show {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.2s ease, visibility 0s 0s;
 }
 
-#error-popup.error {
+#popup.error {
   border: 3px solid red;
 }
 
-#error-popup.warning {
+#popup.warning {
   border: 3px solid gold;
 }
 
-#error-popup.success {
+#popup.success {
   border: 3px solid green;
 }
 
