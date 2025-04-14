@@ -143,10 +143,30 @@ footer a:hover {
   cursor: pointer;
   margin-inline-start: 2rem;
   padding-top: 4px;
+  transition: transform 0.3s ease;
+}
+
+#btn-theme:hover {
+  transform: scale(1.1);
 }
 
 .icon-theme {
+  transition: transform, filter 0.3s ease;
+  transform-origin: center center;
   filter: brightness(100%) invert(var(--clr-icon)) contrast(100%) sepia(0);
+}
+
+#btn-theme.active .icon-theme {
+  animation: rotateIcon 0.5s ease;
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .wrapper {
@@ -216,6 +236,10 @@ img.perfil {
 
 .btn-mas:hover {
   background-color: var(--clr-accent);
+}
+
+.btn-mas:active {
+  transform: scale(0.95);
 }
 
 .skills {
@@ -294,6 +318,10 @@ img.perfil {
 
 #contacto button:hover {
   background-color: var(--clr-accent);
+}
+
+#contacto button:active {
+  transform: scale(0.95);
 }
 
 .input-group {

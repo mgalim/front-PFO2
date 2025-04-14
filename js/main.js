@@ -1,12 +1,3 @@
-// cambio de tema
-const btnTema = document.getElementById("btn-theme");
-
-btnTema.addEventListener("click", () => {
-  document.body.classList.toggle("light-theme");
-  document.body.classList.toggle("dark-theme");
-});
-
-// iconos para popup
 const iconos = {
   error: "./img/danger.svg",
   success: "./img/success.svg",
@@ -14,11 +5,12 @@ const iconos = {
   info: "./img/info.svg",
 };
 
+const btnTema = document.getElementById("btn-theme");
 const formulario = document.getElementById("formulario");
-const inputs = formulario.querySelectorAll("input");
 const popup = document.getElementById("popup");
-const icono = popup.querySelector("img");
 const mensaje = document.getElementById("mensaje");
+const inputs = formulario.querySelectorAll("input");
+const icono = popup.querySelector("img");
 
 function showPopup(msg, type) {
   mensaje.innerText = msg;
@@ -30,7 +22,16 @@ function showPopup(msg, type) {
   }, 2000);
 }
 
-// evitar que ingresen letras
+btnTema.addEventListener("click", () => {
+  btnTema.classList.toggle("active");
+  document.body.classList.toggle("light-theme");
+  document.body.classList.toggle("dark-theme");
+
+  setTimeout(() => {
+    btnTema.classList.remove("active");
+  }, 1000);
+});
+
 inputs.item(3).addEventListener("input", (event) => {
   event.stopPropagation();
   event.target.value = event.target.value.replace(/\D/g, "");
