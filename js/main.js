@@ -24,7 +24,6 @@ function showPopup(msg, type) {
 
 btnTema.addEventListener("click", () => {
   btnTema.classList.toggle("active");
-  document.body.classList.toggle("light-theme");
   document.body.classList.toggle("dark-theme");
 
   setTimeout(() => {
@@ -64,3 +63,31 @@ formulario.addEventListener("submit", function (event) {
   showPopup("Los datos se enviaron con exito!!!", "success");
   formulario.reset();
 });
+
+function cuentaRegresiva() {
+  const fechaLimite = new Date("2025-05-05T23:59:59").getTime();
+  const cuenta = document.getElementById("cuenta-regresiva");
+
+  const intervalo = setInterval(() => {
+    const ahora = new Date().getTime();
+    const diferencia = fechaLimite - ahora;
+
+    if (diferencia <= 0) {
+      clearInterval(intervalo);
+      cuenta.textContent = "¡Tiempo finalizado!";
+      cuenta.style.color = "hsl(348, 83%, 45%)";
+      return;
+    }
+
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor(
+      (diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+    );
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+    cuenta.textContent = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+  }, 1000);
+}
+
+cuentaRegresiva();
