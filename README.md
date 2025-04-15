@@ -54,6 +54,8 @@ Luego, con `setTimeout`, esa clase se elimina automáticamente después de 1 seg
 
 Esta animación mejora la interacción visual del usuario, brindando una respuesta inmediata que comunica que el botón fue accionado.
 
+---
+
 ### 5. Temporizador de entrega del trabajo práctico
 
 Se incorporó un temporizador con cuenta regresiva hacia la fecha límite de entrega (5 de mayo de 2025).  
@@ -79,11 +81,11 @@ Se agregaron enlaces funcionales en las secciones de proyectos, habilidades y pe
 
 ### 4. Efectos visuales en elementos interactivos
 
-Se aplicaron transiciones y animaciones con CSS a botones y enlaces.
+Se aplicaron transiciones y animaciones a los botones y enlaces.
 
 ### 5. Nueva paleta de colores
 
-Se incorporó una paleta renovada para el modo claro, mejorando la estética general.
+Se incorporó una paleta nueva para el modo claro, mejorando la estética general.
 Por último se usaron variables globales para manejar los temas de forma más clara.
 
 ---
@@ -102,6 +104,6 @@ Por último se usaron variables globales para manejar los temas de forma más cl
 
 ---
 
-## 🙌 ¡Gracias por visitar mi portfolio!
+🔗 **URL del sitio :** [👉 Ver mi Portfolio](https://mgalim.github.io/front-PFO2/)
 
-🔗 **URL del sitio publicado:** [👉 Ver mi Portfolio](https://mgalim.github.io/front-PFO2/)
+## 🙌 ¡Gracias por visitar mi portfolio!
