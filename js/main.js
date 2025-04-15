@@ -13,8 +13,8 @@ const inputs = formulario.querySelectorAll("input");
 const icono = popup.querySelector("img");
 
 function showPopup(msg, type) {
-  mensaje.innerText = msg;
   icono.setAttribute("src", iconos[type]);
+  mensaje.textContent = msg;
   popup.classList.add("show", type);
 
   setTimeout(() => {
@@ -56,7 +56,7 @@ formulario.addEventListener("submit", function (event) {
   }
 
   if (!telefonoRegex.test(inputs.item(3).value)) {
-    showPopup("El telefono no es valido.", "warning");
+    showPopup("El telefono debe tener de 8 a 15 dígitos.", "warning");
     return;
   }
 
