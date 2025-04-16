@@ -136,7 +136,7 @@ nav ul {
   text-wrap: nowrap;
   margin-inline: 1rem;
 
-  @media only screen and (min-width: 600px) {
+  @media (min-width: 600px) {
     justify-content: center;
     gap: 1.7rem;
   }
@@ -365,7 +365,7 @@ img.perfil {
   opacity: 0;
   transition: opacity 0.2s ease, visibility 0s 0.2s;
 
-  @media only screen and (min-width: 600px) {
+  @media (min-width: 600px) {
     flex-direction: row;
     width: max-content;
     top: 13%;
