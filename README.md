@@ -21,18 +21,19 @@ En esta segunda parte se han agregado mejoras, funcionalidad y optimizaciones de
 
 ### 1. Validaciones del formulario de contacto
 
-Se implementó una validación personalizada al momento de enviar el formulario.  
+Realicé una una validación personalizada al momento de enviar el formulario.  
 Se verifica que **todos los campos estén completos**, y se validan específicamente el formato del **correo electrónico** y el **teléfono** con expresiones regulares.  
 Esto permite una retroalimentación inmediata al usuario y mejora la experiencia de uso.
 
-Se eligió esta validación manual para tener **mayor control del flujo** y poder combinarla con los mensajes emergentes personalizados.
+Elegí esta validación manual para tener **mayor control del flujo** y poder combinarla con los mensajes emergentes personalizados.
 
 ---
 
 ### 2. Implementación del cambio de tema de forma global
 
-Se utilizó un botón que alterna la clase en el `<body>` (`dark-theme`) para cambiar el esquema de colores del sitio de forma global.  
+Utilicé un botón que alterna la clase en el `<body>` (`dark-theme`) para cambiar el esquema de colores del sitio de forma global.  
 En caso de no estar presente la clase cae al fallback que es el tema claro.
+Ademas al presionar el botón que cambia el tema activa una clase `active` que provoca una **animación CSS temporal**.
 
 Me pareció una forma **sencilla y efectiva** de manejar ambos temas.
 
@@ -40,19 +41,16 @@ Me pareció una forma **sencilla y efectiva** de manejar ambos temas.
 
 ### 3. Pop-up informativos generados dinámicamente según el estado del formulario
 
-Se desarrolló una función `showPopup()` que muestra un mensaje personalizado en pantalla acompañado de un ícono representativo según el tipo de mensaje: éxito, error, advertencia o información.  
+Desarrollé una función `showPopup()` que muestra un mensaje personalizado en pantalla acompañado de un ícono representativo según el tipo de mensaje: éxito, error, advertencia o información.  
 El pop-up se muestra durante 2 segundos y se oculta automáticamente.
 
 Permite una retroalimentación visual rápida sin redireccionamientos ni alertas nativas molestas. Es una solución más simple y elegante que abrir un modal en pantalla completa.
 
 ---
 
-### 4. Animación dinámica del ícono del tema
+### 4. Renderizado dinámico de peliculas
 
-El botón que cambia el tema activa una clase `active` que provoca una **animación CSS temporal**.  
-Luego, con `setTimeout`, esa clase se elimina automáticamente después de 1 segundo para reiniciar el efecto en futuros clics.
-
-Esta animación mejora la interacción visual del usuario, brindando una respuesta inmediata que comunica que el botón fue accionado.
+Implementé el renderizado dinámico de una lista de películas en lugar de escribir manualmente cada elemento en el HTML. Se usa un array de objetos que contiene los datos de cada película (título, imagen, descripción, enlace). Con un bucle voy creando e insertando los elementos dinamicamente. Elegí esta solución para practicar la manipulación del DOM y trabajar con estructuras dinámicas.
 
 ---
 
@@ -92,15 +90,20 @@ Por último se usaron variables globales para manejar los temas de forma más cl
 
 ## 🖼️ Comparación Visual entre Versiones
 
-### 🔹 Versión 1 – Entrega inicial con modo oscuro solamente
+### 🔹 Versión 1 – Entrega inicial con solo modo oscuro sin js
 
-![Captura Versión 1](./img/version-1.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="./img/desktop-v1.png" alt="Versión 1" style="max-width: 100%; width: 100%; height: auto;"/>
+</div>
 
 ---
 
 ### 🔹 Versión 2 – Versión actual con mejoras y ambos temas
 
-![Captura Versión 2](./img/version-2.jpg)
+<div style="display: flex; justify-content: space-between; gap: 1rem;">
+  <img src="./img/movile-v2-light.png" alt="Versión 2 claro" style="width: 48%; max-width: 560px; height: auto;"/>
+  <img src="./img/movile-v2-dark.png" alt="Versión 2 oscuro" style="width: 48%; max-width: 560px; height: auto;"/>
+</div>
 
 ---
 

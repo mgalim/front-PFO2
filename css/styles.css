@@ -135,6 +135,8 @@ nav ul {
   overflow-x: auto;
   text-wrap: nowrap;
   margin-inline: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
 
   @media (min-width: 600px) {
     justify-content: center;
@@ -404,7 +406,6 @@ img.perfil {
   width: fit-content;
   padding: 1.5rem;
   gap: 1.5rem;
-  margin-bottom: 4rem;
 }
 
 .pelicula {
