@@ -9,7 +9,7 @@
   --clr-light-text: hsl(0, 0%, 15%);
   --clr-light-500: hsl(218, 15%, 75%);
   --clr-light-800: hsl(209, 39%, 65%);
-  --clr-light-accent: hsl(51, 80%, 40%);
+  --clr-light-accent: hsl(37, 83%, 47%);
 
   /* light-theme */
   --clr-bar: hsl(208, 19%, 50%);
@@ -60,7 +60,6 @@ h1 {
 
 h2 {
   font-size: clamp(1.25rem, 4vw, 1.6rem);
-  /* margin-block: 1rem; */
 }
 
 h3 {
@@ -147,6 +146,7 @@ nav a {
   color: var(--clr-foreground);
   display: block;
   padding: 5px;
+  transition: background-color 0.3s;
 
   &:hover {
     background-color: var(--clr-accent);
@@ -225,16 +225,18 @@ img.perfil {
 
 .btn-mas {
   display: inline-block;
-  padding: 0.75rem;
+  padding: 0.6rem 0.75rem;
   background-color: var(--clr-bar);
   color: var(--clr-text);
+  outline: 2px solid var(--clr-background);
   font-weight: var(--fw-bold);
   margin-top: 1.2rem;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease, outline 0.3s ease;
 
   &:hover {
     background-color: var(--clr-accent);
+    outline: 2px solid var(--clr-accent);
   }
 
   &:active {
@@ -313,7 +315,7 @@ img.perfil {
     color: var(--clr-text);
     font-weight: var(--fw-bold);
     margin-top: 1.2rem;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
 
     &:hover {
       background-color: var(--clr-accent);
@@ -359,6 +361,7 @@ img.perfil {
   position: fixed;
   top: 17%;
   left: 50%;
+  z-index: 800;
   transform: translateX(-50%);
   background-color: var(--clr-strong);
   padding: 0.7rem;
@@ -476,22 +479,11 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s, filter 0.3s;
 
     &:hover {
       color: var(--clr-accent);
-      background-color: transparent;
-    }
-
-    svg {
-      width: 24px;
-      height: 24px;
-      fill: var(--clr-foreground);
-      transition: fill 0.3s ease;
-    }
-
-    &:hover svg {
-      fill: var(--clr-accent);
+      filter: brightness(0.8);
     }
   }
 }
